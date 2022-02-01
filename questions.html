@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questions</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="background: #a5ffa1;">
+		<div class="text-center col-8 mx-auto q1">
+			<h1>Вопрос #1</h1>
+			<img src="fsu.svg" style="width: 500px;">
+			<h3>x²-y²=</h3>
+			<div class="row fs-3">
+				<div class="col an11">1) (x-y)²</div>
+				<div class="col an12">2) (x-y)(x+y)</div>
+				<div class="col an13">3) (x+y)²</div>
+			</div>
+		</div>
+		<div class="text-center col-8 mx-auto q2" style="display: none;">
+			<h1>Вопрос #2</h1>
+			<img src="fsu.svg" style="width: 500px;">
+			<h3>(x+y)²=</h3>
+			<div class="row fs-3">
+				<div class="col an21">1) (x²+y²)</div>
+				<div class="col an22">2) (x+xy+y)²</div>
+				<div class="col an23">3) (x²+2xy+y²)</div>
+			</div>
+		</div>
+		<div class="text-center col-8 mx-auto q3" style="display: none;">
+			<h1>Вопрос #3</h1>
+			<img src="fsu.svg" style="width: 500px;">
+			<h3>(x-y)²=</h3>
+			<div class="row fs-3">
+				<div class="col an31">1) (x²-2xy+y²)</div>
+				<div class="col an32">2) (x²-y²)</div>
+				<div class="col an33">3) (x²-2xy-y²)</div>
+			</div>
+		</div>
+		<div class="text-center col-8 mx-auto w" style="display: none;">
+			<h1>Вы прошли!</h1>
+			<img src="win.svg" style="position: absolute; left: 0px; top: 0px;" class="win">
+		</div>
+		<script type="text/javascript">
+			document.querySelector(".an11").onclick = function(){
+				alert("Неправильно")
+			}
+			document.querySelector(".an12").onclick = function(){
+				alert("Правильно!")
+				document.querySelector(".q1").style.display = "none"
+				document.querySelector(".q2").style.display = "block"
+			}
+			document.querySelector(".an13").onclick = function(){
+				alert("Неправильно")
+			}
+			
+
+			document.querySelector(".an21").onclick = function(){
+				alert("Неправильно")
+			}
+			document.querySelector(".an22").onclick = function(){
+				alert("Неправильно")
+			}
+			document.querySelector(".an23").onclick = function(){
+				alert("Правильно!")
+				document.querySelector(".q2").style.display = "none"
+				document.querySelector(".q3").style.display = "block"
+			}
+
+			document.querySelector(".an31").onclick = function(){
+				alert("Правильно!")
+				document.querySelector(".q3").style.display = "none"
+				document.querySelector(".w").style.display = "block"
+			}
+			document.querySelector(".an32").onclick = function(){
+				alert("Неправильно")
+			}
+			document.querySelector(".an33").onclick = function(){
+				alert("Неправильно")
+			}
+			
+		</script>
+</body>
+</html>
